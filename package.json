@@ -1,0 +1,11 @@
+{
+  "name": "stunary",
+  "version": "1.0.0",
+  "description": "website of stationary for every student",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "The SIPNJ",
+  "license": "ISC"
+}

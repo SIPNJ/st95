@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUNARY</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/SIPNJ/Stunary/master/Picture/LOGO.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://sipnj.github.io/Stunary/REQUIRED/required.css">
+    <script src="https://kit.fontawesome.com/bbb353060e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index/CalendarPicker.style.css">
+    <link rel="stylesheet" href="./index/index.css">
+</head>
+
+<body>
+    <!-- Top navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bgbase3 container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Brand -->
+        <a href="/index.html" class="navbar-brand text-dark">
+            <img class="LOGO" src="https://raw.githubusercontent.com/SIPNJ/Stunary/master/Picture/LOGO.png" alt="LOGO">
+        </a>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- First navbar -->
+            <ul class="navbar-nav nav-justify mr-auto">
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link title2nd text-dark" href="/index.html">Home</a>
+                </li>
+                <!-- Official App -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle title2nd text-dark" href="#" id="official-app-drop-down"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Official App
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="official-app-drop-down" id="officialDropdown">
+                        <a class="dropdown-item subtitle text-dark"
+                            href="/stunary/official app/Calculator/tqOS5.0/tqOS5.html">tqOS 5.0</a>
+                        <a class="dropdown-item subtitle text-dark"
+                            href="/stunary/official app/Calculator/NIC1.0/NIC.html">NiC 1.0</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item subtitle text-dark"
+                            href="/stunary/official app/PeriodicTable/PeTa.html">Periodic Table</a>
+                        <a class="dropdown-item subtitle text-dark"
+                            href="/stunary/official app/SolubilityTable/Solubility.html">Solubility Chart</a>
+                    </div>
+                </li>
+                <!-- Beta App -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle title2nd text-dark" href="#" id="beta-app-drop-down"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Beta App
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="beta-app-drop-down" id="betaDropdown">
+                        <a class="dropdown-item subtitle text-dark"
+                            href="/stunary/beta app/pokedex/pokedex.html">Pokedex</a>
+                        <a class="dropdown-item subtitle text-dark" href="/stunary/beta app/CSV2JSON/CSV2JSON.html">CSV
+                            - JSON</a>
+                    </div>
+                </li>
+                <!-- ACCOUNT -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle title2nd text-dark" href="#" id="account-drop-down" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="account-drop-down" id="accountDropdown">
+                    </div>
+                </li>
+            </ul>
+            <!-- Second navbar -->
+            <form class="form-inline d-xs-none d-sm-none d-md-none d-lg-block my-2 my-lg-0">
+                <input class="form-control mr-sm-2 title2nd text-dark" type="search" placeholder="Search">
+                <button class="btn btn-outline-dark px-3 py-3-outline-dark title2nd my-2 my-sm-0"
+                    type="submit">Enter</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb title2nd text-dark mr-auto">
+            <li class="breadcrumb-item" aria-current="page">Stunary</li>
+            <li class="breadcrumb-item active mr-auto" aria-current="page">Home</li>
+            <!-- LIGHT / DARK MODE -->
+            <li class="ml-auto">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="toggle-light">
+                    <label class="custom-control-label paratext text-dark" for="toggle-light">Light/Dark</label>
+                </div>
+            </li>
+        </ol>
+    </nav>
+    <!-- ROOT -->
+    <div class="container-fluid my-2 mx-auto row">
+        <!-- MAIN CONTENT -->
+        <div class="col-12 col-md-6 col-lg-8">
+            <p class="h1 text-center mx-auto my-2 title1st third0">WELCOME TO STUNARY</p>
+            <!-- <div id="carousel" class="my-2 my-lg-4 carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item position-relative active">
+                        <div class="background-img-carousel w-100"></div>
+                        <img src="https://raw.githubusercontent.com/SIPNJ/Stunary/master/Picture/greengrass.jpg"
+                            class="d-block w-100 img-carousel img-thumbnail img-fluid">
+                        <div class="carousel-caption">
+                            <a href="/stunary/official app/Calculator/tqOS5.0/tqOS5.html"
+                                class="h5 text-light">Calculator</a>
+                            <p class="text-light d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis
+                                interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <div class="background-img-carousel w-100"></div>
+                        <img src="https://raw.githubusercontent.com/SIPNJ/Stunary/master/Picture/periodictable.jpg"
+                            class="d-block w-100 img-carousel img-thumbnail img-fluid">
+                        <div class="carousel-caption">
+                            <a href="/stunary/official app/PeriodicTable/PeTa.html" class="h5 text-light">Periodic
+                                Table</a>
+                            <p class="text-light d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <div class="background-img-carousel w-100"></div>
+                        <img src="https://raw.githubusercontent.com/SIPNJ/Stunary/master/Picture/Plane.jpg"
+                            class="d-block w-100 img-carousel img-thumbnail img-fluid">
+                        <div class="carousel-caption">
+                            <a href="/stunary/account/signin/signin.html" class="h5 text-light">Login now</a>
+                            <p class="text-light d-none d-md-block">Praesent commodo cursus magna, vel scelerisque nisl
+                                consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> -->
+            <div class="my-2 title1st">Location to go :</div>
+            <div class="row">
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/official app/Calculator/tqOS5.0/tqOS5.html" class="card-title text-center title2nd cursor-alias">tqOS 5.0</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/tqOS5.png"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/official app/PeriodicTable/PeTa.html" class="card-title text-center title2nd cursor-alias">Periodic Table</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/periodictable.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/official app/SolubilityTable/Solubility.html" class="card-title text-center title2nd cursor-alias">Solubility Chart</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/solubilitychart.png"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/account/signin/signin.html" class="card-title text-center title2nd cursor-alias">Sign In</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/signin.png"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/account/signup/signup.html" class="card-title text-center title2nd cursor-alias">Sign Up</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/signup.png"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto my-1 col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/stunary/account/profile/profile.html" class="card-title text-center title2nd cursor-alias">Profile</a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="background-img-carousel w-100"></div>
+                            <img class="card-img-bottom img-carousel"
+                                src="https://sipnj.github.io/Stunary/Picture/profile.png"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDE LAUNCHPAD -->
+        <div class="d-none d-md-block col-md-6 col-lg-4">
+            <!-- WEATHER NOW -->
+            <div class="card mx-1 my-3">
+                <div class="card-header bgbase3">
+                    <div class="card-text text-center mx-auto title2nd third0">Weather in <span id="location"></span>
+                    </div>
+                </div>
+                <div class="card-body px-0 py-0 bgthird1 table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="title2nd third0" scope="col"></th>
+                                <th class="title2nd third0" scope="col">Variable</th>
+                                <th class="title2nd third0" scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center third0" scopr="row"><i class="far fa-clock"></i></td>
+                                <td class="curved-text third0">Time</td>
+                                <td class="curved-text third0"><span id="Hour"></span>:<span id="Minute"></span>:<span
+                                        id="Second"></span></td>
+                            </tr>
+                            <tr>
+                                <th class="text-center third0" scope="row"><i class="fas fa-thermometer-half"></i></th>
+                                <td class="curved-text third0">Temperature</td>
+                                <td class="curved-text third0" id="Temperature"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-center third0" scope="row"><i class="fas fa-tint"></i></th>
+                                <td class="curved-text third0">Humidity</td>
+                                <td class="curved-text third0" id="Humid"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-center third0" scope="row"><i class="fas fa-cloud"></i></th>
+                                <td class="curved-text third0">Cloudiness</td>
+                                <td class="curved-text third0" id="Cloud"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-center third0" scope="row"><i class="fas fa-compress-arrows-alt"></i>
+                                </th>
+                                <td class="curved-text third0">Pressure</td>
+                                <td class="curved-text third0" id="Pressure"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer bgthird2">
+                    <form class="form-inline">
+                        <input type="text" id="input" class="mx-auto form-control curved-text"
+                            placeholder="Enter the city">
+                        <input type="button" id="submit" class="mx-auto btn btn-primary curved-text" onclick="SubMit()"
+                            value="Search">
+                    </form>
+                </div>
+            </div>
+            <!-- CALENDAR -->
+            <div class="mx-auto my-2 bgthird1 third0 rounded" id="myCalendarWrapper"
+                style="border: 0.13vw solid rgb(224, 224, 228);"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid rounded bgthird2">
+                <div class="container">
+                    <h2><span class="third0">ABOUT</span> <span class="second3">US</span></h2>
+                    <p class="h4 lead third0">We provided an online stationary for every students, anything can be found
+                        here
+                        such as calculator, periodic table, solubility chart and so on. Hope you enjoy it!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./index/CalendarPicker.js"></script>
+        <script src="./index.js"></script>
+        <script src="/REQUIRED/required.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
